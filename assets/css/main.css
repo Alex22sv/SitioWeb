@@ -3059,3 +3059,34 @@
 			}
 
 	}
+
+/* Special */
+#countdown {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+#countdown ul li {
+	display: inline-block;  
+	list-style-type: none;  
+	padding: 1em;  
+}
+#countdown ul li span {  
+	display: block;  
+	font-size: 2rem;  
+}  
+.emoji {  
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 1rem;  
+}  
+.emoji span {  
+	font-size: 4rem;  
+	padding: 0 .5rem;  
+}
+.hidden {
+	display: none;
+}
