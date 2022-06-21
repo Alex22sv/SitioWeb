@@ -22,25 +22,25 @@
 				<header>
 					<span class="image avatar"><img src="images/avatar.png" alt="avatar"/></span>
 					<h1 id="logo"><a href="#">Alex22 SV</a></h1>
-					<p>Desarrollador web front-end</p>
+					<p id="occupation">Desarrollador web front-end</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">Acerca</a></li>
-						<li><a href="#five">Cuenta regresiva</a></li>
-						<li><a href="#two">Cosas que me gustan hacer</a></li>
-						<li><a href="#three">Proyectos</a></li>
-						<li><a href="#four">Contacto</a></li>
+						<li><a href="#one" class="active" id="navAbout">Acerca</a></li>
+						<li><a href="#five" id="navCountdown">Cuenta regresiva</a></li>
+						<li><a href="#two" id="navThingsILikeToDo">Cosas que me gustan hacer</a></li>
+						<li><a href="#three" id="navProjects">Proyectos</a></li>
+						<li><a href="#four" id="navContact">Contacto</a></li>
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="https://twitter.com/Alex22_SV" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="https://twitter.com/Alex22_SV" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.instagram.com/alex22_sv/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/Alex22-SV" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li> -->
-						<li><a href="https://discord.com/users/435534715831975938" target="_blank" class="icon fa-discord"><span class="label">Discord</span></a></li>
+						<li><a href="https://discord.com/users/435534715831975938" target="_blank" class="icon fa-discord"><span class="label">Discord</span></a></li> -->
+						<li><button onclick="changeLanguage('eng')">English</button></li>
+						<li><button onclick="changeLanguage('es')">Español</button></li>
 					</ul>
 				</footer>
 			</section>
@@ -55,9 +55,9 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Acerca de mí</h2>
+										<h2 id="titleAboutMe">Acerca de mí</h2>
 									</header>
-									<p>Hola! mi nombre es Alexander y soy de El Salvador. Me gusta crear programas, más que nada sitios web, aunque también he desarrollado bots de Discord en el pasado. Estoy interesado en trabajar en proyectos nuevos e inovadores. Suelo trabajar solo pero puedo organizarme con equipos. Sé hablar el inglés y el español. En mi tiempo libre suelo jugar videojuegos (principalmente Call of Duty y Rocket League) pero también escuchar música Lofi.</p>
+									<p id="descAboutMe">Hola! mi nombre es Alexander y soy de El Salvador. Me gusta crear programas, más que nada sitios web, aunque también he desarrollado bots de Discord en el pasado. Estoy interesado en trabajar en proyectos nuevos e inovadores. Suelo trabajar solo pero puedo organizarme con equipos. Puedo hablar el inglés y el español. En mi tiempo libre suelo jugar videojuegos (principalmente Call of Duty y Rocket League) pero también escuchar música Lofi.</p>
 									<ul class="feature-icons">
 										<li class="fa-language">ES / EN</li>
 										<li class="fa-user">He / Him</li>
@@ -69,7 +69,8 @@
 						<!-- Birthday countdown -->
 							<section id="five">
 								<div class="container">
-									<h3 id="headline">Cuenta regresiva a mi cumpleaños</h3>  
+									<h3 id="countdownTitle">Cuenta regresiva a mi cumpleaños</h3>  
+									<h3 id="countdownOverTitle" style="display: none;">¡Es mi cumpleaños!</h3>
 									<div id="emojiContent" class="hidden emoji">  
 										<span>🥳</span>  
 										<span>🎉</span>  
@@ -77,10 +78,10 @@
 									</div>
 									<div id="countdown">  
 										<ul>  
-											<li><span id="days"></span> días</li>  
-											<li><span id="hours"></span> horas</li>  
-											<li><span id="minutes"></span > minutos</li>  
-											<li><span id="seconds"></span> segundos</li>  
+											<li><span id="days"></span> <span id="daysText">días</span></li>  
+											<li><span id="hours"></span> <span id="hoursText">horas</span></li>  
+											<li><span id="minutes"></span > <span id="minutesText">minutos</span></li>  
+											<li><span id="seconds"></span> <span id="secondsText">segundos</span></li>  
 										</ul>  
 									</div>    
 								</div>
@@ -88,16 +89,16 @@
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>Cosas que me gustan hacer</h3>
+									<h3 id="thingsILikeToDoTitle">Cosas que me gustan hacer</h3>
 									<!-- <p></p> -->
 									<ul class="feature-icons">
-										<li class="fa-code">Escribir código</li>
-										<li class="fa-gamepad">Jugar videojuegos</li>
-										<li class="fa-utensils">Cocinar</li>
-										<li class="fa-dumbbell">Hacer ejercicio</li>
-										<li class="fa-book">Leer libros</li>
-										<li class="fa-coffee">Tomar café</li>
-										<li class="fa-music">Escuchar música</li>
+										<li class="fa-code" id="writeCode">Escribir código</li>
+										<li class="fa-gamepad" id="playVideogames">Jugar videojuegos</li>
+										<li class="fa-utensils" id="cook">Cocinar</li>
+										<li class="fa-dumbbell" id="workout">Hacer ejercicio</li>
+										<li class="fa-book" id="readBooks">Leer libros</li>
+										<li class="fa-coffee" id="drinkCoffee">Tomar café</li>
+										<li class="fa-music" id="listenMusic">Escuchar música</li>
 										
 									</ul>
 								</div>
@@ -106,37 +107,37 @@
 						<!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h3>Mis proyectos</h3>
+									<h3 id="projectsTitle">Mis proyectos</h3>
 									<div class="features">
 										<article>
 											<a href="https://github.com/Alex22-SV/ListaDeTareas" target="_blank">
-												<h4>Lista de Tareas</h4>
-												<p>Proyecto para crear una lista de tareas.</p>
+												<h4 id="todoList">Lista de Tareas</h4>
+												<p id="todoListDesc">Proyecto para crear una lista de tareas.</p>
 											</a>
 										</article>
 										<article>
 											<a href="https://github.com/Alex22-SV/DescargaVideosDeYT" target="_blank">
-												<h4>Descarga Videos de YT</h4>
-												<p>Proyecto para descargar videos y audios de YouTube.</p>
+												<h4 id="downloadYtVideos">Descarga Videos de YT</h4>
+												<p id="downloadYtVideosDesc">Proyecto para descargar videos y audios de YouTube.</p>
 											</a>
 										</article>
 										
 										<article>
 											<a href="https://lacocinadalex.tk" target="_blank">
-												<h4>La Cocina d'Alex</h4>
-												<p>La Cocina d'Alex es un sitio web que busca compartir recetas de cocina para todos.</p>
+												<h4 id="laCocinadAlex">La Cocina d'Alex</h4>
+												<p id="laCocinadAlexDesc">La Cocina d'Alex es un sitio web que busca compartir recetas de cocina para todos.</p>
 											</a>
 										</article>
 										<article>
 											<a href="https://art.alex22sv.tk" target="_blank">
-												<h4>Alex22 SV - arte</h4>
-												<p>Sitio web personal para mostrar mi arte.</p>
+												<h4 id="alex22svArt">Alex22 SV - arte</h4>
+												<p id="alex22svArtDesc">Sitio web personal para mostrar mi arte.</p>
 											</a>
 										</article>
 										<article>
 											<a href="https://github.com/Alex22-SV/PhoenixAPI-Bot" target="_blank">
-												<h4>PhoenixAPI</h4>
-												<p>Bot de Discord para administrar servidores de exaroton.</p>
+												<h4 id="phoenixapi">PhoenixAPI</h4>
+												<p id="phoenixapiDesc">Bot de Discord para administrar servidores de exaroton.</p>
 											</a>
 										</article>
 									</div>
@@ -146,8 +147,8 @@
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
-									<h3>Contáctame</h3>
-									<p>Puedes contactarme a través de cualquiera de mis redes sociales, paso mayormente activo en Discord así que puedes escribirme por privado si quieres una respuesta rápida.</p>
+									<h3 id="contactMeTitle">Contáctame</h3>
+									<p id="contactMeDesc">Puedes contactarme a través de cualquiera de mis redes sociales, paso mayormente activo en Discord así que puedes escribirme por privado si quieres una respuesta rápida.</p>
 									<ul class="feature-icons">
 										<li class="fa-twitter"><a href="https://twitter.com/Alex22_SV" target="_blank">@Alex22_SV</a></li>
 										<li class="fa-instagram"><a href="https://www.instagram.com/alex22_sv/" target="_blank">@alex22_sv</a></li>
@@ -182,7 +183,7 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="license">
-								<li>Sitio web bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0 license</a></li><li>Diseño: <a href="https://html5up.net/" target="_blank">HTML5 UP</a></li>
+								<li><span id="licenseText">Sitio web bajo licencia</span> <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0 license</a></li><li><span id="designText">Diseño</span>: <a href="https://html5up.net/" target="_blank">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
