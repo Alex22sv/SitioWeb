@@ -185,6 +185,8 @@ var language = {
 		drinkcoffee: "Drink coffee",
 		listenmusic: "Listen to music",
 		projectstitle: "My projects",
+		reproductordemusica: "Music player",
+		reproductordemusicadesc: "Project for portfolio to play music.",
 		todolist: "To-do list",
 		todolistdesc: "Personal project to create a to-do list.",
 		downloadytvideos: "Download YT videos",
@@ -224,6 +226,8 @@ var language = {
 		drinkcoffee: "Tomar café",
 		listenmusic: "Escuchar música",
 		projectstitle: "Mis proyectos",
+		reproductordemusica: "Reproductor de música",
+		reproductordemusicadesc: "Proyecto de portafolio para reroducir música.",
 		todolist: "Lista de Tareas",
 		todolistdesc: "Proyecto para crear una lista de tareas.",
 		downloadytvideos: "Descarga Videos de YT",
@@ -268,6 +272,8 @@ if (window.location.hash) {
 		document.getElementById("drinkCoffee").textContent = language.eng.drinkcoffee;
 		document.getElementById("listenMusic").textContent = language.eng.listenmusic;
 		document.getElementById("projectsTitle").textContent = language.eng.projectstitle;
+		document.getElementById("reproductorDeMusica").textContent = language.eng.reproductordemusica;
+		document.getElementById("reproductorDeMusicaDesc").textContent = language.eng.reproductordemusicadesc;
 		document.getElementById("todoList").textContent = language.eng.todolist;
 		document.getElementById("todoListDesc").textContent = language.eng.todolistdesc;
 		document.getElementById("downloadYtVideos").textContent = language.eng.downloadytvideos;
