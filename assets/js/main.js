@@ -198,7 +198,7 @@ var language = {
 		phoenixapi: "PhoenixAPI",
 		phoenixapidesc: "Discord bot to manage your exaroton servers.",
 		contactmetitle: "Contact me",
-		contactmedesc: "You can contact me through any of my social media, I'm mostly active on Discord so feel free to DM me there if you want a faster response.",
+		contactmedesc: "You can contact me through any of my social media or my email, I'm mostly active on Discord so feel free to DM me there if you want a faster response.",
 		licensetext: "Website under",
 		designtext: "Desing"
 	},
@@ -239,7 +239,7 @@ var language = {
 		phoenixapi: "PhoenixAPI",
 		phoenixapidesc: "Bot de Discord para administrar servidores de exaroton.",
 		contactmetitle: "Contáctame",
-		contactmedesc: "Puedes contactarme a través de cualquiera de mis redes sociales, paso mayormente activo en Discord así que puedes escribirme por privado si quieres una respuesta rápida.",
+		contactmedesc: "Puedes contactarme a través de cualquiera de mis redes sociales o mi correo electrónico, paso mayormente activo en Discord así que puedes escribirme por privado si quieres una respuesta rápida.",
 		licensetext: "Sitio web bajo licencia",
 		designtext: "Diseño"
 	}
