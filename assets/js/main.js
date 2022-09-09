@@ -251,7 +251,7 @@ if (window.location.hash) {
 	if (window.location.hash == "#eng") {
 		document.getElementById("occupation").textContent = language.eng.occupation;
 		document.getElementById("navAbout").textContent = language.eng.navabout;
-		document.getElementById("navCountdown").textContent = language.eng.navcountdown;
+		// document.getElementById("navCountdown").textContent = language.eng.navcountdown;
 		document.getElementById("navThingsILikeToDo").textContent = language.eng.navthingsiliketodo;
 		document.getElementById("navProjects").textContent = language.eng.navprojects;
 		document.getElementById("navContact").textContent = language.eng.navcontact;
