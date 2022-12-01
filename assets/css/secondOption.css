@@ -31,6 +31,17 @@ body {
     box-sizing: border-box;
 }
 
+/* Default */
+.centrado {
+    text-align: center;
+}
+.btn {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
 /* Type */
 
 body, input, select, textarea {
