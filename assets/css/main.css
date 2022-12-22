@@ -510,3 +510,11 @@ ul.actions li:last-child {
     padding: 5px;
     border-bottom: 1px solid #5e42a6;
 }
+
+/* Alex logo */
+.alexlogo {
+    background: url('../../images/AlexLogoTransparentBlack.png');
+    height: 30px;
+    width: 30px;
+    display: block;
+}
